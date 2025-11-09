@@ -1,0 +1,8 @@
+Django
+djangorestframework
+psycopg2-binary
+django-minio-storage
+django-cors-headers
+django-storages
+boto3
+djangorestframework-simplejwt
