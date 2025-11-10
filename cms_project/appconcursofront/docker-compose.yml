@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  concursos-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: processos-concursos-app
+    restart: unless-stopped
+    
+    # Volumes para desenvolvimento (live-reload)er p
+    # Descomente as linhas abaixo para desenvolvimento local
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
+
